@@ -32,10 +32,10 @@
 }
 
 .info {
-  @apply absolute bottom-0 p-5 text-white;
-  @apply opacity-0 translate-y-5 transition-all duration-[420ms];
+  @apply relative h-full p-5 text-white;
+  @apply opacity-0 translate-y-5 transition-all duration-[420ms] flex flex-col justify-center text-center w-full	;
 
   &::before {
-    @apply content-[""] opacity-90 absolute -z-10 bottom-0 left-0 right-0 w-screen h-[200px] bg-gradient-to-t from-black;
+    @apply content-[""] opacity-90 absolute -z-10 inset-0 h-screen bg-gradient-to-t from-black;
   }
 }

@@ -2,27 +2,21 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import styles from "./CurtainScroll.module.scss"
+import GameCarouselContents from "contents/GameCarouselContents"
 
 export default function CurtainScroll() {
   return (
     <div id={styles.wrapper}>
       <div className={styles.root}>
-        <CurtainScrollItem
-          image="https://res.cloudinary.com/skepfusky-dookie/image/upload/v1663249654/cld-sample.jpg"
-          description="Description"
-        />
-        <CurtainScrollItem
-          image="https://res.cloudinary.com/skepfusky-dookie/image/upload/v1663249654/cld-sample-2.jpg"
-          description="Description"
-        />
-        <CurtainScrollItem
-          image="https://res.cloudinary.com/skepfusky-dookie/image/upload/v1663249654/cld-sample-5.jpg"
-          description="Description"
-        />
-        <CurtainScrollItem
-          image="https://res.cloudinary.com/skepfusky-dookie/image/upload/v1663249654/cld-sample-4.jpg"
-          description="Description"
-        />
+        {GameCarouselContents.map((items) => (
+          <CurtainScrollItem
+            key={items.title}
+            title={items.title}
+            image={items.image}
+            description={items.description}
+						// active
+          />
+        ))}
       </div>
     </div>
   )
@@ -56,8 +50,11 @@ export function CurtainScrollItem({
     >
       <Image layout="fill" src={image} alt={description} priority />
       <div className={styles.info}>
+				<h3>{title}</h3>
         <p>{description}</p>
-        <div>View on wikipedia, about, game links</div>
+        <Link href="#">
+					More
+				</Link>
       </div>
     </div>
   )
