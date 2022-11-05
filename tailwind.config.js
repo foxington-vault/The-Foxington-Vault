@@ -11,6 +11,8 @@ module.exports = {
 			fontFamily: {
 				'lucky-body': "LuckysTale-Body",
 				'lucky-bold': "LuckysTale-Bold-New",
+				'inter': 'Inter',
+				'open-sans': 'Open Sans',
 			}
 		},
 	},

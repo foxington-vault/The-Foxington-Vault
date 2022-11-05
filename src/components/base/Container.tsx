@@ -1,5 +1,13 @@
 import Head from "next/head"
 
+interface IContainerProps extends Required<LayoutProps> {
+  wrap?: boolean
+  summaryLarge?: boolean
+  title?: string
+  description?: string
+  image?: string
+}
+
 export default function Container({
   children,
   wrap,
@@ -7,7 +15,7 @@ export default function Container({
   title,
   description,
   image,
-}: ContainerProps) {
+}: IContainerProps) {
   const wrapContent = wrap ? "wrap-contents" : undefined
   const cardSummary = summaryLarge ? "summary_large_image" : "summary"
 

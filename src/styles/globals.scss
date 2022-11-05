@@ -1,33 +1,15 @@
+@use "fonts";
+
 @tailwind base;
 
 @layer base {
-  @font-face {
-    font-family: "LuckysTale-Bold-New";
-    src: url("/fonts/LuckysTale-Bold-New.ttf") format("truetype"),
-      url("/fonts/LuckysTale-Bold-New.woff") format("woff"),
-      url("/fonts/LuckysTale-Bold-New.woff2") format("woff2");
-    font-weight: 900;
-    font-display: swap;
-    font-style: bold;
-  }
-
-  @font-face {
-    font-family: "LuckysTale-Body";
-    src: url("/fonts/LuckysTale-Body.ttf") format("truetype"),
-      url("/fonts/LuckysTale-Body.woff") format("woff"),
-      url("/fonts/LuckysTale-Body.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
-
   body {
     @apply overflow-x-hidden;
   }
 
   @each $i, $h in [ 1 "5xl", 2 "4xl", 3 "3xl", 4 "2xl", 5 "xl" ] {
     h#{$i} {
-      @apply font-bold font-lucky-bold text-#{$h};
+      @apply text-#{$h};
     }
   }
 }
