@@ -1,0 +1,1 @@
+export { NoteTemplate } from "./NoteTemplate"

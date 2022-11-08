@@ -1,1 +1,3 @@
-/// <reference path="./app.d.ts" />
+declare interface LayoutProps {
+  children?: React.ReactNode
+}

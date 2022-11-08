@@ -1,4 +1,5 @@
 import Container from "@/components/Base/Container"
+import Volunteer from "@/components/Volunteer"
 
 export default function Home() {
   return (
@@ -32,43 +33,20 @@ export default function Home() {
           having the word "treehouse" from the name, I quickly abandoned it.
         </p>
       </LandingSection>
-      <LandingSection heading="I need your help!">
+      <LandingSection heading="Why?">
         <p>
-          I'm just a 20-year-old unemployed hobbyist that currently has no job,
-          only living off Ko-fi donations, YouTube, and music streams revenue.
+          I believe that any kind of media preservation is vital for any work
+          out there, if it goes unnoticed for a long time, then it's considered
+          lost media.
         </p>
         <p>
-          Despite my high skill ceiling in web development, design, and general
-          high-level programming; I'm no expert game dev and I'm learning
-          specifically to reverse-engineer Unity games for the sake of this
-          archival project, especially with its VR counterparts, which I don't
-          have copies of currently.
-        </p>
-        <p>
-          I have legally bought both SLT and NSLT on Steam, and I use those to
-          reverse engineer and possibly decompile them for this project, but I'm
-          way far off from just decompiling assets from those games for the sake
-          of this project.
-        </p>
-        <p>
-          I'm taking the time to learn learn to reverse-engineer Unity games and
-          learning the basic C# knowledge for the sake of this archival project,
-          especially with its VR counterparts, which I don't have copies of
-          currently.
-        </p>
-        <p>
-          I also need physical items that I can't obtain normally such as
-          physical game copies and purchased items from the store; especially
-          those listed in{" "}
-          <a
-            href="#archive-contents"
-            className="underline text-orange-500 hover:text-orange-700"
-          >
-            Archive contents
-          </a>
-          .
+          Playful clearly puts the amount of dedication, love, and work they put
+          to this franchise and I'm one of the <em>lucky</em> ones (pun
+          intended) who care about the effort they put and decide to document
+          and preserve for their token of their hard work.
         </p>
       </LandingSection>
+
       <LandingSection heading="Archive contents">
         <p>
           There are rules on what's going on in the archive and what's not. Due
@@ -112,18 +90,56 @@ export default function Home() {
           </li>
         </ul>
       </LandingSection>
-      <LandingSection heading="Why?">
+      <LandingSection heading="I need your help!">
         <p>
-          I believe that any kind of media preservation is vital for any work
-          out there, if it goes unnoticed for a long time, then it's considered
-          lost media.
+          I'm just a 20-year-old unemployed hobbyist that currently has no job,
+          only living off to Ko-fi donations, YouTube, and music streams
+          revenue.
         </p>
         <p>
-          Playful clearly puts the amount of dedication, love, and work they put
-          to this franchise and I'm one of the <em>lucky</em> ones (pun
-          intended) who care about the effort they put and decide to document
-          and preserve for their token of their hard work.
+          Despite my high skill ceiling in web development, design, and general
+          high-level programming; I'm no expert game dev and I'm learning
+          specifically to reverse-engineer Unity games for the sake of this
+          archival project, especially with its VR counterparts, which I don't
+          have copies of currently.
         </p>
+        <p>
+          I have legally bought both SLT and NSLT on Steam, and I use those to
+          reverse engineer and possibly decompile them for this project, but I'm
+          way far off from just decompiling assets from those games for the sake
+          of this project.
+        </p>
+        <p>
+          I'm taking the time to learn learn to reverse-engineer Unity games and
+          learning the basic C# knowledge for the sake of this archival project,
+          especially with its VR counterparts, which I don't have copies of
+          currently.
+        </p>
+        <p>
+          I also need physical items that I can't obtain normally such as
+          physical game copies and purchased items from the{" "}
+          <a
+            href="https://store.playfulstudios.com/"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="underline text-orange-500 hover:text-orange-700"
+          >
+            official store
+          </a>
+          ; especially those listed in{" "}
+          <a
+            href="#archive-contents"
+            className="underline text-orange-500 hover:text-orange-700"
+          >
+            Archive contents
+          </a>
+          .
+        </p>
+      </LandingSection>
+      <LandingSection heading="Volunteers">
+        <div className="grid grid-cols-1 gap-5 place-items-center">
+          <Volunteer name="TBA">hee hee</Volunteer>
+        </div>
       </LandingSection>
     </Container>
   )
