@@ -1,5 +1,7 @@
+import ReactMarkdown from "react-markdown"
 import Container from "@/components/Base/Container"
 import Volunteer from "@/components/Volunteer"
+import faq from "./faq"
 
 export default function Home() {
   return (
@@ -46,7 +48,6 @@ export default function Home() {
           and preserve for their token of their hard work.
         </p>
       </LandingSection>
-
       <LandingSection heading="Archive contents">
         <p>
           There are rules on what's going on in the archive and what's not. Due
@@ -93,8 +94,9 @@ export default function Home() {
       <LandingSection heading="I need your help!">
         <p>
           I'm just a 20-year-old unemployed hobbyist that currently has no job,
-          only living off to Ko-fi donations, YouTube, and music streams
-          revenue.
+          only living off to Ko-fi donations, YouTube, and music streams revenue
+          whilst keeping this project, website, and entire infrastructure all by
+          myself.
         </p>
         <p>
           Despite my high skill ceiling in web development, design, and general
@@ -136,11 +138,23 @@ export default function Home() {
           .
         </p>
       </LandingSection>
-      <LandingSection heading="Volunteers">
+      {/* <LandingSection heading="Volunteers">
         <div className="grid grid-cols-1 gap-5 place-items-center">
           <Volunteer name="TBA">hee hee</Volunteer>
         </div>
+      </LandingSection> */}
+      <LandingSection heading="Frequently Asked Questions">
+        {faq.map((item, index) => (
+          <FAQ key={index} question={item.question} answer={item.answer} />
+        ))}
       </LandingSection>
+      <section className="max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-10 pb-5 flex flex-col gap-y-2.5 md:gap-y-3 text-base lg:text-lg">
+        <p className="text-center">
+          If there are any suggestions, it be the website layout, request
+          for additional content to the franchise/archives, or any inquery - feel free to
+          email me, skepfoosky15@gmail.com!
+        </p>
+      </section>
     </Container>
   )
 }
@@ -155,16 +169,53 @@ function LandingSection(props: LandingSectionProps) {
     ?.replace(/\s/g, "-")
     .replace(/!|\?/g, "")
     .toLowerCase()
+
   return (
     <section id={idParse}>
       <article className="max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-10 pb-5 flex flex-col gap-y-2.5 md:gap-y-3 text-base lg:text-lg">
         <div>
           <h2 className="font-lucky-bold text-3xl lg:text-4xl drop-shadow-md">
-            {props.heading}
+            <a href={`#${idParse}`} className="hover:underline">
+              {props.heading}
+            </a>
           </h2>
         </div>
         {props.children}
       </article>
     </section>
+  )
+}
+
+interface FAQProps {
+  question?: string
+  answer?: string
+}
+
+function FAQ(props: FAQProps) {
+  const parse = props.question
+    ?.replace(/\s/g, "-")
+    .replace(/!|\?/g, "")
+    .toLowerCase()
+
+  return (
+    <div
+      id={parse}
+      className="flex flex-col gap-2 pt-3 pb-5 mb-5 border-b-2 border-orange-300"
+    >
+      <h3 className="font-lucky-body text-orange-500">
+        <a href={`#${parse}`} className="hover:underline cursor-pointer">
+          {props.question}
+        </a>
+      </h3>
+      <ReactMarkdown
+        components={{
+          a: ({ node, ...props }) => (
+            <a className="text-orange-700 hover:underline" {...props}></a>
+          ),
+        }}
+      >
+        {props.answer ?? ""}
+      </ReactMarkdown>
+    </div>
   )
 }
