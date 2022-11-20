@@ -1,5 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+/** @type {import("tailwindcss").Config} */
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
 	content: [
@@ -13,10 +13,10 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'lucky-body': "LuckysTale-Body",
-				'lucky-bold': "LuckysTale-Bold-New",
-				'inter': 'Inter',
-				'open-sans': 'Open Sans',
+				"lucky-body": ["LuckysTale-Body", ...defaultTheme.fontFamily.sans],
+				"lucky-bold": ["LuckysTale-Bold-New", ...defaultTheme.fontFamily.sans],
+				"inter": ["Inter", ...defaultTheme.fontFamily.sans],
+				"open-sans": ["Open Sans", ...defaultTheme.fontFamily.sans],
 			}
 		},
 	},
