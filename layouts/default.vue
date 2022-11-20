@@ -1,7 +1,7 @@
 <template>
 	<div id="app-wrapper">
-		<header>Header</header>
+		<TheBaseNavbar />
 		<slot />
-		<footer>Footer</footer>
+		<TheBaseFooter />
 	</div>
 </template>
