@@ -1,6 +1,6 @@
 <template>
   <div id="footer-container" class="mx-auto max-w-screen-2xl">
-    <div className="flex flex-col text-center justify-between px-10 py-5 gap-3">
+    <div class="flex flex-col text-center justify-between px-10 py-5 gap-3">
       <p>
         <strong>The Foxington Vault</strong> is a dedicated archive project and fansite run by a
         group of dedicated volunteers. <strong>The Foxington Vault</strong> does not pertain any
