@@ -1,8 +1,8 @@
 const menu = {
 	root: [
 		{ link: "#", name: "Franchise" },
-		{ link: "#", name: "Archives" },
 		{ link: "#", name: "Links" },
+		{ link: "#", name: "Archives" },
 		{ link: "#", name: "More" },
 	],
 	franchise: {
