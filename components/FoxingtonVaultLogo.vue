@@ -4,7 +4,7 @@ const props = defineProps<{ horizontal?: boolean; class: string }>()
 
 <template>
   <div id="logo-wrapper" :class="class">
-    <div v-if="horizontal">
+    <div v-if="props.horizontal">
       <svg
         data-name="Foxington Vault Horizontal"
         xmlns="http://www.w3.org/2000/svg"

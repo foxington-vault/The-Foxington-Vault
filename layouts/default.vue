@@ -2,6 +2,6 @@
 	<div id="app-wrapper">
 		<TheBaseNavbar />
 		<slot />
-		<TheBaseFooter />
+		<LazyTheBaseFooter />
 	</div>
 </template>
