@@ -1,6 +1,9 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	typescript: { shim: false },
+	typescript: {
+		shim: false
+	},
+	css: ['~/assets/css/main.css'],
 	app: {
 		head: {
 			link: [
@@ -9,7 +12,7 @@ export default defineNuxtConfig({
 		}
 	},
 	modules: ['@nuxt/content', '@nuxtjs/color-mode'],
-	css: ['~/assets/css/main.css'],
+	plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
 	postcss: {
 		plugins: {
 			tailwindcss: {},
