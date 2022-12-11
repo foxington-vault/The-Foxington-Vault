@@ -1,5 +1,5 @@
 <script setup>
-import menu from "./Menu"
+import navMenu from "./BaseFooterItems"
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import menu from "./Menu"
 					class="text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-sm text-white bg-orange-400">WIP</span>
 			</NuxtLink>
 			<nav class="">
-				<ul v-for="menus in menu.root" :key="menus">
+				<ul v-for="menus in navMenu.root" :key="menus">
 					<li class="font-lucky-body text-xl">
 						<NuxtLink :href="menus.link">{{ menus.name }}</NuxtLink>
 					</li>

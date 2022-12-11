@@ -1,4 +1,4 @@
-const menu = {
+const navMenu = {
 	root: [
 		{ link: "#", name: "Franchise" },
 		{ link: "#", name: "Links" },
@@ -15,4 +15,4 @@ const menu = {
 	}
 }
 
-export default menu
+export default navMenu
