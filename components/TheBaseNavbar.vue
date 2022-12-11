@@ -1,5 +1,6 @@
 <script setup>
-import navMenu from "./BaseFooterItems"
+import FoxingtonVaultLogo from './Logos/FoxingtonVaultLogo.vue';
+import { navbarItems } from './NavItems'
 </script>
 
 <template>
@@ -10,8 +11,8 @@ import navMenu from "./BaseFooterItems"
 				<span
 					class="text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-sm text-white bg-orange-400">WIP</span>
 			</NuxtLink>
-			<nav class="">
-				<ul v-for="menus in navMenu.root" :key="menus">
+			<nav>
+				<ul v-for="menus in navbarItems.root" :key="menus">
 					<li class="font-lucky-body text-xl">
 						<NuxtLink :href="menus.link">{{ menus.name }}</NuxtLink>
 					</li>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import navFooter from "./BaseFooterItems"
+import { footerItems } from './NavItems';
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import navFooter from "./BaseFooterItems"
 		<div class="bg-orange-800 text-white">
 			<footer id="wrapper">
 				<div class="link-container">
-					<div v-for="item, index in navFooter" :key="index">
+					<div v-for="item, index in footerItems" :key="index">
 						<h2 class="font-lucky-bold text-[1.65rem] mb-0.5">{{ item.heading }}</h2>
 						<div role="list" class="flex flex-col gap-y-0.5 items-start">
 							<NuxtLink :to="liItem.link" v-for="liItem, index in item.links" :key="index" role="listitem">
