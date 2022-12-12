@@ -20,7 +20,6 @@
 	font-style: normal;
 }
 
-@tailwind base;
 
 @layer base {
 	html {
@@ -29,6 +28,14 @@
 
 	body {
 		@apply font-open-sans;
+	}
+}
+
+@tailwind base;
+
+@layer components {
+	.fit-screen-responsive {
+		@apply mx-auto max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl;
 	}
 }
 

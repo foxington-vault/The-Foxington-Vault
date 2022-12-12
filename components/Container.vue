@@ -10,7 +10,7 @@ const props = defineProps<{
 	nowrap?: boolean
 }>()
 
-const detectWrap = !props.nowrap ? "wrap-contents" : "no-wrap"
+const detectWrap = !props.nowrap ? "wrap-contents" : ""
 const detectClass = !props.class ? detectWrap : `${detectWrap} ${props.class}`
 
 useHead({
@@ -41,9 +41,5 @@ useHead({
 <style>
 .wrap-contents {
 	@apply mx-auto max-w-screen-2xl px-6;
-}
-
-.no-wrap {
-	@apply px-6;
 }
 </style>

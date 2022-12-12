@@ -4,12 +4,11 @@ import { navbarItems } from './NavItems'
 </script>
 
 <template>
-	<div id="navbar-container">
+	<div class="fit-screen-responsive navbar-container">
 		<header id="navbar-contents">
 			<NuxtLink href="/" class="relative flex items-center gap-x-1">
 				<FoxingtonVaultLogo horizontal class="w-[20rem]" />
-				<span
-					class="text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-sm text-white bg-orange-400">WIP</span>
+				<span class="wip-badge">WIP</span>
 			</NuxtLink>
 			<nav>
 				<ul v-for="menus in navbarItems.root" :key="menus">
@@ -23,15 +22,19 @@ import { navbarItems } from './NavItems'
 </template>
 
 <style lang="scss" scoped>
-#navbar-container {
-	@apply mx-auto max-w-screen-2xl;
+.navbar-container {
+	@apply mx-auto max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl;
 }
 
 #navbar-contents {
-	@apply flex justify-between items-center px-10 py-5;
+	@apply flex justify-between items-center px-10 py-8;
 
 	nav {
 		@apply flex gap-9
 	}
+}
+
+.wip-badge {
+	@apply text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-sm text-white bg-orange-400;
 }
 </style>
