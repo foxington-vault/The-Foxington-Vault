@@ -11,8 +11,8 @@ import { navbarItems } from './NavItems'
 				<span class="wip-badge">WIP</span>
 			</NuxtLink>
 			<nav>
-				<ul v-for="menus in navbarItems.root" :key="menus">
-					<li class="font-lucky-body text-xl">
+				<ul>
+					<li v-for="menus in navbarItems.root" :key="menus" class="nav-list-item">
 						<NuxtLink :href="menus.link">{{ menus.name }}</NuxtLink>
 					</li>
 				</ul>
@@ -29,9 +29,17 @@ import { navbarItems } from './NavItems'
 #navbar-contents {
 	@apply flex justify-between items-center px-10 py-8;
 
-	nav {
-		@apply flex gap-9
+	ul {
+		@apply flex gap-x-1;
 	}
+
+}
+nav a {
+	@apply px-4 py-6;
+}
+
+.nav-list-item {
+	@apply font-lucky-body text-[1.65rem] leading-[0];
 }
 
 .wip-badge {

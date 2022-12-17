@@ -8,7 +8,7 @@ import HeroButton from '../Buttons/HeroButton.vue';
 		<div class="btn-containers">
 			<HeroButton name="Games" link="/games" />
 			<HeroButton name="Characters" link="/characters" />
-			<HeroButton name="Achievements" link="/achievements" />
+			<HeroButton name="Guides & Achievements" link="/achievements" />
 			<HeroButton name="Behind the Scenes" link="/behind-the-scenes" />
 			<HeroButton name="Community" link="/community" />
 			<HeroButton name="About this project" link="/about" />

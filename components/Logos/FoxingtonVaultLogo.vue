@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-const props = defineProps<{ horizontal?: boolean; class: string }>()
+const props = defineProps<{ horizontal?: boolean; class?: string }>()
 </script>
 
 <template>
   <div id="logo-wrapper" :class="class">
-    <div v-if="props.horizontal">
+    <div data-logo-horizontal v-if="props.horizontal">
       <svg
         data-name="Foxington Vault Horizontal"
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const props = defineProps<{ horizontal?: boolean; class: string }>()
         />
       </svg>
     </div>
-    <div v-else>
+    <div data-logo-full v-else>
       <svg
         data-name="Foxington Vault Main"
         xmlns="http://www.w3.org/2000/svg"

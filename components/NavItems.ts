@@ -1,11 +1,10 @@
 export const navbarItems = {
 	root: [
 		{ link: "#", name: "Franchise" },
-		{ link: "#", name: "Links" },
-		{ link: "#", name: "Archives" },
-		{ link: "#", name: "More" },
+		{ link: "#", name: "Community" },
+		{ link: "#", name: "About" },
 	],
-	franchise: {
+	dropdown: {
 		games: [],
 		characters: [
 			{ name: "Name", type: "Protagonist", rank: "Guardian Order" },
