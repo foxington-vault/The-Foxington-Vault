@@ -11,7 +11,7 @@ import FoxingtonVaultLogo from '../Logos/FoxingtonVaultLogo.vue';
 
 <style lang="scss" scoped>
 #hero-banner {
-	@apply bg-orange-300 flex justify-center items-center h-[40vh];
+	@apply bg-orange-300 flex justify-center items-center h-[60vh];
 }
 
 .logo-responsive {
@@ -26,6 +26,6 @@ import FoxingtonVaultLogo from '../Logos/FoxingtonVaultLogo.vue';
 	}
 
 	width: calc(var(--relative-size, 50%) + var(--size, 10rem));
-	height: 40vh;
+	height: 35vh;
 }
 </style>

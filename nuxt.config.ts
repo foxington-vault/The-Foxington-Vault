@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/content", "@nuxtjs/color-mode", "@vueuse/motion/nuxt"],
   plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
   postcss: {
     plugins: {

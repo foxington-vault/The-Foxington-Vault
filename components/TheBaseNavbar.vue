@@ -43,6 +43,6 @@ nav a {
 }
 
 .wip-badge {
-	@apply text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-sm text-white bg-orange-400;
+	@apply text-sm flex items-center font-lucky-body pt-0.5 px-1 rounded-md text-white bg-red-600;
 }
 </style>
