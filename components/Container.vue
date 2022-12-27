@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 
-const urlPath = `https://www.foxingtonvault.com${route.fullPath}`
+const URL_PATH = `https://www.foxingtonvault.com${route.fullPath}`
 
 const props = defineProps<{
 	title: string
@@ -20,14 +20,14 @@ useHead({
 		{ property: "og:title", content: props.title },
 		{ property: "og:description", content: props.description },
 		{ property: "og:type", content: "website" },
-		{ property: "og:url", content: urlPath },
+		{ property: "og:url", content: URL_PATH },
 		{ name: "twitter:title", content: props.title },
 		{ name: "twitter:description", content: props.description },
 		{ name: "twitter:card", content: "summary_large_image" },
-		{ name: "twitter:url", content: urlPath },
+		{ name: "twitter:url", content: URL_PATH },
 	],
 	link: [
-		{ rel: "canonical", href: urlPath }
+		{ rel: "canonical", href: URL_PATH }
 	]
 })
 </script>
