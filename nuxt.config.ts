@@ -3,16 +3,13 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  css: ["~/assets/css/main.scss"],
+  css: [
+    "~/assets/css/main.scss",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
   app: {
     head: {
-      link: [
-        { rel: "icon", href: "./favicon.ico" },
-        {
-          rel: "stylesheet",
-          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css",
-        },
-      ],
+      link: [{ rel: "icon", href: "./favicon.ico" }],
       script: [
         {
           src: "https://umami.kurofusky.xyz/umami.js",
@@ -23,7 +20,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/color-mode", "@vueuse/motion/nuxt"],
+  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
   plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
   postcss: {
     plugins: {

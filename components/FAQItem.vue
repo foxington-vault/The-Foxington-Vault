@@ -11,7 +11,11 @@ const ansRef = ref<HTMLDivElement | null>(null)
   <div class="faq-item" :data-expanded="expanded">
     <div class="heading" role="tab" @click="expanded = !expanded">
       <h2>{{ props.title }}</h2>
-      <i class="fas fa-chevron-down fa-xs fa-fw"></i>
+      <div class="client-fa-icon">
+        <ClientOnly>
+          <font-awesome-icon icon="fa-solid fa-chevron-down" />
+        </ClientOnly>
+      </div>
     </div>
     <div
       ref="ansRef"
@@ -35,22 +39,30 @@ const ansRef = ref<HTMLDivElement | null>(null)
       @apply mb-2.5;
     }
 
-		&:not(:first-child, :last-child) {
-			@apply my-2.5;
-		}
+    &:not(:first-child, :last-child) {
+      @apply my-2.5;
+    }
 
-		&:last-child {
-			@apply mt-2.5;
-		}
+    &:last-child {
+      @apply mt-2.5;
+    }
+
+    .client-fa-icon {
+      @apply -rotate-90;
+    }
   }
 }
 
 .heading {
   @apply flex px-6 justify-between items-center w-full pt-4 pb-0 font-lucky-body text-3xl select-none cursor-pointer;
-	
-	h2 {
-		@apply translate-y-0.5;
-	}
+
+  h2 {
+    @apply translate-y-0.5;
+  }
+
+  .client-fa-icon {
+    @apply text-xl transition-transform duration-300;
+  }
 }
 
 .faq-contents {
