@@ -5,7 +5,7 @@ import { footerItems } from './NavItems';
 <template>
 	<footer class="fit-screen-responsive wrapper">
 		<div class="lucky-sit">
-			<CldImg />
+			<CldImg file-name="lucky-stare-custom.png" />
 		</div>
 		<div class="link-container">
 			<div v-for="item, index in footerItems" :key="index">

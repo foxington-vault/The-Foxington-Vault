@@ -6,12 +6,13 @@ import FoxingtonVaultLogo from '../Logos/FoxingtonVaultLogo.vue';
 <template>
 	<section id="hero-banner">
 		<FoxingtonVaultLogo class="logo-responsive" />
+		<h2>Coming soon...</h2>
 	</section>
 </template>
 
 <style lang="scss" scoped>
 #hero-banner {
-	@apply bg-orange-300 flex justify-center items-center h-[60vh];
+	@apply bg-orange-300 flex flex-col justify-center items-center h-[60vh];
 }
 
 .logo-responsive {
@@ -27,5 +28,9 @@ import FoxingtonVaultLogo from '../Logos/FoxingtonVaultLogo.vue';
 
 	width: calc(var(--relative-size, 50%) + var(--size, 10rem));
 	height: 35vh;
+}
+
+h2 {
+	@apply font-lucky-bold text-3xl;
 }
 </style>

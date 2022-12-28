@@ -45,18 +45,9 @@ export const footerItems: FooterItems[] = [
 		]
 	},
 	{
-		heading: "Community",
-		links: [
-			{ name: "Lost Media", link: "#" },
-			{ name: "DeviantArt", link: "#", external: true },
-			{ name: "Official Discord", link: "#" , external: true},
-			{ name: "Speedrunning Discord", link: "#", external: true },
-		]
-	},
-	{
 		heading: "Projects",
 		links: [
-			{ name: "Lucky's Tale Text-To-Speech", link: "/projects/lucky-tts" },
+			{ name: "TBA", link: "#" },
 		]
 	},
 	{

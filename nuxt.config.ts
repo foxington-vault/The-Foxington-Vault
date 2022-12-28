@@ -6,7 +6,13 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.scss"],
   app: {
     head: {
-      link: [{ rel: "icon", href: "./favicon.ico" }],
+      link: [
+        { rel: "icon", href: "./favicon.ico" },
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css",
+        },
+      ],
       script: [
         {
           src: "https://umami.kurofusky.xyz/umami.js",
