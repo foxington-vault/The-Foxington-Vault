@@ -8,7 +8,7 @@ const ansRef = ref<HTMLDivElement | null>(null)
 </script>
 
 <template>
-  <div class="faq-item">
+  <div class="faq-item" :data-expanded="expanded">
     <div class="heading" role="tab" @click="expanded = !expanded">
       <h2>{{ props.title }}</h2>
       <i class="fas fa-chevron-down fa-xs fa-fw"></i>
@@ -28,19 +28,33 @@ const ansRef = ref<HTMLDivElement | null>(null)
 
 <style lang="scss" scoped>
 .faq-item {
-  @apply overflow-hidden mx-auto w-full border xl:w-9/12 shadow-md rounded-md;
-}
+  @apply overflow-hidden mx-auto w-full border border-orange-400 xl:w-9/12  rounded-md transition-[margin] duration-300;
 
-.heading {
-  @apply flex px-5 justify-between items-center w-full pt-8 pb-4 font-lucky-body text-3xl select-none cursor-pointer;
+  &[data-expanded="true"] {
+    &:first-child {
+      @apply mb-2.5;
+    }
 
-  h2 {
-    @apply leading-[0rem];
+		&:not(:first-child, :last-child) {
+			@apply my-2.5;
+		}
+
+		&:last-child {
+			@apply mt-2.5;
+		}
   }
 }
 
+.heading {
+  @apply flex px-6 justify-between items-center w-full pt-4 pb-0 font-lucky-body text-3xl select-none cursor-pointer;
+	
+	h2 {
+		@apply translate-y-0.5;
+	}
+}
+
 .faq-contents {
-  @apply relative z-[10] px-4 pb-4 transition-all duration-300 my-3.5;
+  @apply relative z-[10] px-6 pb-4 transition-all duration-300 my-3.5;
 
   &[aria-expanded="false"] {
     @apply my-0 opacity-0 pointer-events-none;

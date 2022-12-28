@@ -6,8 +6,8 @@
         <p>
           <strong>The Foxington Vault</strong> is a non-profit open source
           digital archive project created by Kuroji Fusky, a collective effort
-          for archiving the entire Lucky's Tale franchise created by Playful
-          Studios in 2014.
+          for archiving the entire <em>Lucky's Tale</em> franchise created by
+          Playful Studios in 2014.
         </p>
         <p>
           My goal for this project is to gather as much substantial and public
@@ -18,21 +18,24 @@
       </FAQItem>
       <FAQItem title="Why is it called The Foxington Vault?">
         <p>
-          Initially launched as <em>The Lucky Treehouse</em> - noting from one
-          of the moderators from the official Discord server.
+          Initially launched as <em>The Lucky Treehouse</em> on November 30,
+          2021 - noting from one of the moderators from the official Discord
+          server.
         </p>
         <p>
           Fearing that there would be a possible first-class action lawsuit from
-          Nintendo for having the word "treehouse" from the name, I quickly
-          abandoned it.
+          Nintendo for having the word "treehouse" from the name, and nobody
+          seemed to be interested about the project from the official Discord
+          server, I quickly abandoned it.
         </p>
       </FAQItem>
-      <FAQItem title="What are the archive contents?">
+      <FAQItem title="What does the archive contain?">
         <p>
-          There are rules on what's going on in the archive and what's not. Due
-          to my constant paranoia on the legal mumbo jumbo, things are subject
-          to change over time but here's what I'm currently accepting these
-          items from the archive:
+          Asides directly from dumping it from the Internet Archive, there are
+          rules on what's going on in the archive and what's not. Due to my
+          constant paranoia on the legal mumbo jumbo, things are subject to
+          change over time but here's what I'm currently accepting these items
+          from the archive:
         </p>
         <ul class="list-inside list-disc">
           <li>
@@ -59,33 +62,51 @@
         <ul class="list-inside list-disc">
           <li>
             Fanart — even with full credit, things may be complicated in terms
-            of copyright
+            of copyright - although, the content itself will be displayed under
+            the Community page
           </li>
           <li>Full decompiled source code — I think this should be obvious</li>
         </ul>
       </FAQItem>
       <FAQItem title="Is the archive currently open?">
         <p>
-          Currently, the archive is still under construction, there aren't of
+          This project is still relatively new and the
+          <strong>archive is still under construction</strong>, there aren't of
           pages still available yet being the state of this website being still
           barebones. However, this project is 100%
           <NuxtLink
             to="https://github.com/foxington-vault"
             class="text-orange-400 underline"
           >
-            open source
+            {{ "open source" }}
           </NuxtLink>
           and anyone is free to contribute to the project! We'll announce it
           once the archive is open for everyone!
         </p>
       </FAQItem>
-      <FAQItem title="But... why was this project created in the first place?">
+      <FAQItem title="What was The Foxington Vault built on?">
+        <p>
+          The website is built on the Vue.js web framework, hosted on Vercel;
+          the images are hosted on Cloudinary and the archived images are hosted
+          under a self-hosted CDN via CloudFlare.
+        </p>
+        <p>
+          The actual bundling of archives are automated entirely with Python to
+          be served by offline or local browsing and to be updated through the
+          Internet Archive.
+        </p>
+        <p>
+          Unforunately, I'm just a 20-year-old freelancer on the internet
+          providing the free sources to host the entire site.
+        </p>
+      </FAQItem>
+      <FAQItem title="Why was this project created in the first place?">
         <article class="flex flex-col gap-2.5">
           <p>
-            Not a lot of people know about the games or vaguely remember seeing
-            it somewhere else, and I believe that any kind of media preservation
-            is vital for any work out there, if it goes unnoticed for a long
-            time, then it's considered lost media.
+            There are cases that not a lot of people know about the games they
+            saw or vaguely remember seeing it somewhere else, and I believe that
+            any kind of media preservation is vital for any work out there, if
+            it goes unnoticed for a long time, then it's considered lost media.
           </p>
           <p>
             This is the sole reason why I created this project; to provide a
@@ -98,6 +119,25 @@
             put to this franchise and I'm one of the <em>lucky</em> ones (pun
             intended) who care about the effort they put and decide to document
             and preserve for their token of their hard work.
+          </p>
+        </article>
+      </FAQItem>
+      <FAQItem title="How can I contact you for any inqueries or suggestions?">
+        <article class="flex flex-col gap-2.5">
+          <p>
+            You can contact me directly on Twitter
+            <NuxtLink
+              to="https://twitter.com/kurojifusky.js"
+              target="_blank"
+              class="underline text-orange-500"
+              >@kurojifusky.js</NuxtLink
+            >
+            or by email at
+            <NuxtLink
+              to="mailto:hello@foxingtonvault.com"
+              class="underline text-orange-500"
+              >hello@foxingtonvault.com</NuxtLink
+            >.
           </p>
         </article>
       </FAQItem>
