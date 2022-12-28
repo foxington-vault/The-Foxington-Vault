@@ -16,7 +16,17 @@
           models, and sounds from its games.
         </p>
       </FAQItem>
-      <FAQItem title="Is the archive open?"> no lol </FAQItem>
+      <FAQItem title="Why is it called The Foxington Vault?">
+        <p>
+          Initially launched as <em>The Lucky Treehouse</em> - noting from one
+          of the moderators from the official Discord server.
+        </p>
+        <p>
+          Fearing that there would be a possible first-class action lawsuit from
+          Nintendo for having the word "treehouse" from the name, I quickly
+          abandoned it.
+        </p>
+      </FAQItem>
       <FAQItem title="What are the archive contents?">
         <p>
           There are rules on what's going on in the archive and what's not. Due
@@ -24,31 +34,50 @@
           to change over time but here's what I'm currently accepting these
           items from the archive:
         </p>
-        <ul>
+        <ul class="list-inside list-disc">
           <li>
-            Public coverage of the games themselves (i.e. articles and videos
-            written about the franchise itself)
+            {{
+              "Public coverage of the games themselves (i.e. articles and videos written about the franchise itself)"
+            }}
           </li>
           <li>General info about the game: characters, lore, etc.</li>
           <li>The team and development behind <em>Lucky's Tale</em></li>
           <li>Images of physical items</li>
           <li>
-            Written guides — with the connections I have, I can grant permission
-            to use and include them in the archive
+            {{
+              "Written guides — with the connections I have, I can grant permission to use and include them in the archive"
+            }}
           </li>
           <li>
-            Audio bites and game graphics using certain Unity decompiler(s)
+            {{
+              "Audio bites and game graphics using certain Unity decompiler(s)"
+            }}
           </li>
           <li>Promotional and other content provided on the media kit</li>
         </ul>
         <p>Here's what I'm <strong>NOT</strong> including:</p>
-        <ul>
+        <ul class="list-inside list-disc">
           <li>
             Fanart — even with full credit, things may be complicated in terms
             of copyright
           </li>
           <li>Full decompiled source code — I think this should be obvious</li>
         </ul>
+      </FAQItem>
+      <FAQItem title="Is the archive currently open?">
+        <p>
+          Currently, the archive is still under construction, there aren't of
+          pages still available yet being the state of this website being still
+          barebones. However, this project is 100%
+          <NuxtLink
+            to="https://github.com/foxington-vault"
+            class="text-orange-400 underline"
+          >
+            open source
+          </NuxtLink>
+          and anyone is free to contribute to the project! We'll announce it
+          once the archive is open for everyone!
+        </p>
       </FAQItem>
       <FAQItem title="But... why was this project created in the first place?">
         <article class="flex flex-col gap-2.5">
