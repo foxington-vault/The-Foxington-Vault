@@ -88,7 +88,7 @@
         <p>
           The website is built on the Vue.js web framework, hosted on Vercel;
           the images are hosted on Cloudinary and the archived images are hosted
-          under a self-hosted CDN via CloudFlare.
+          under a self-hosted CDN via Cloudflare.
         </p>
         <p>
           The actual bundling of archives are automated entirely with Python to
