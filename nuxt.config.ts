@@ -3,13 +3,30 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  css: [
-    "~/assets/css/main.scss",
-    "@fortawesome/fontawesome-svg-core/styles.css",
-  ],
+  css: ["~/assets/css/main.scss"],
   app: {
     head: {
-      link: [{ rel: "icon", href: "./favicon.ico" }],
+      link: [
+        { rel: "icon", href: "./favicon.ico" },
+        {
+          rel: "preload",
+          href: "fonts/LuckysTale-Body.ttf",
+          as: "font",
+          type: "font/ttf",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
+          href: "fonts/LuckysTale-Bold-New.ttf",
+          as: "font",
+          type: "font/ttf",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css",
+        },
+      ],
       script: [
         {
           src: "https://umami.kurofusky.xyz/umami.js",

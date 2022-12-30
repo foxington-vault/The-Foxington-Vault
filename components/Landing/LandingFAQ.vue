@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <h2>Questions and Answers</h2>
-    <div class="grid gap-y-4 w-full mt-10">
+    <div class="grid w-full mt-10 gap-y-4">
       <FAQItem title="What is The Foxington Vault?">
         <p>
           <strong>The Foxington Vault</strong> is a non-profit open source
@@ -37,7 +37,7 @@
           change over time but here's what I'm currently accepting these items
           from the archive:
         </p>
-        <ul class="list-inside list-disc">
+        <ul class="list-disc list-inside">
           <li>
             {{
               "Public coverage of the games themselves (i.e. articles and videos written about the franchise itself)"
@@ -59,7 +59,7 @@
           <li>Promotional and other content provided on the media kit</li>
         </ul>
         <p>Here's what I'm <strong>NOT</strong> including:</p>
-        <ul class="list-inside list-disc">
+        <ul class="list-disc list-inside">
           <li>
             Fanart — even with full credit, things may be complicated in terms
             of copyright - although, the content itself will be displayed under
@@ -129,13 +129,13 @@
             <NuxtLink
               to="https://twitter.com/kurojifusky.js"
               target="_blank"
-              class="underline text-orange-500"
+              class="text-orange-500 underline"
               >@kurojifusky.js</NuxtLink
             >
             or by email at
             <NuxtLink
               to="mailto:hello@foxingtonvault.com"
-              class="underline text-orange-500"
+              class="text-orange-500 underline"
               >hello@foxingtonvault.com</NuxtLink
             >.
           </p>

@@ -12,9 +12,7 @@ const ansRef = ref<HTMLDivElement | null>(null)
     <div class="heading" role="tab" @click="expanded = !expanded">
       <h2>{{ props.title }}</h2>
       <div class="client-fa-icon">
-        <ClientOnly>
-          <font-awesome-icon icon="fa-solid fa-chevron-down" />
-        </ClientOnly>
+				<i class="fas fa-chevron-down"></i>
       </div>
     </div>
     <div
