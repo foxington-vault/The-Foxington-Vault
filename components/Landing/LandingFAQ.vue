@@ -24,7 +24,7 @@
         </p>
         <p>
           Fearing that there would be a possible first-class action lawsuit from
-          Nintendo for having the word "treehouse" from the name, and nobody
+          Nintendo for having the word "treehouse" from the name and with nobody
           seemed to be interested about the project from the official Discord
           server, I quickly abandoned it.
         </p>
@@ -86,7 +86,7 @@
       </FAQItem>
       <FAQItem title="What was The Foxington Vault built on?">
         <p>
-          The website is built on the Vue.js web framework, hosted on Vercel;
+          The website is built on the Nuxt web framework, hosted on Vercel;
           the images are hosted on Cloudinary and the archived images are hosted
           under a self-hosted CDN via Cloudflare.
         </p>
@@ -97,7 +97,7 @@
         </p>
         <p>
           Unforunately, I'm just a 20-year-old freelancer on the internet
-          providing the free sources to host the entire site.
+          providing the free sources to host the entire site and resources.
         </p>
       </FAQItem>
       <FAQItem title="Why was this project created in the first place?">
@@ -122,15 +122,15 @@
           </p>
         </article>
       </FAQItem>
-      <FAQItem title="How can I contact you for any inqueries or suggestions?">
+      <FAQItem title="Can I contact you for any inqueries or suggestions?">
         <article class="flex flex-col gap-2.5">
           <p>
             You can contact me directly on Twitter
             <NuxtLink
-              to="https://twitter.com/kurojifusky.js"
+              to="https://twitter.com/kurojifusky"
               target="_blank"
               class="text-orange-500 underline"
-              >@kurojifusky.js</NuxtLink
+              >@kurojifusky</NuxtLink
             >
             or by email at
             <NuxtLink
