@@ -20,16 +20,6 @@
 	font-style: normal;
 }
 
-@layer base {
-	html {
-		@apply scroll-smooth;
-	}
-
-	body {
-		@apply font-open-sans;
-	}
-}
-
 @tailwind base;
 
 @layer components {
