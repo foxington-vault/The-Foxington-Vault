@@ -37,4 +37,25 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  pwa: {
+		icon: false,
+		meta: {
+			lang: "en",
+			title: "",
+			ogTitle: "",
+			ogSiteName: "The Foxingtion Vault",
+			ogType: "",
+			description: "",
+			twitterCard: "summary",
+		},
+    manifest: {
+      name: "The Foxington Vault",
+      short_name: "Foxington Vault",
+      orientation: "portrait",
+      description: "",
+      scope: "/",
+      start_url: "/",
+      theme_color: "#121314",
+    },
+  },
 })

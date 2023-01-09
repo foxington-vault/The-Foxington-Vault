@@ -1,8 +1,0 @@
-{
-	"name": "The Foxington Vault",
-	"short_name": "The Foxington Vault",
-	"description": "",
-	"short_url": "/",
-	"scope": "https://www.foxingtonvault.com/",
-	"display": "standalone"
-}
