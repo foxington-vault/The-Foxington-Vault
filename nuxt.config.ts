@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content", "@nuxtjs/color-mode"],
-  plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
   postcss: {
     plugins: {
       tailwindcss: {},

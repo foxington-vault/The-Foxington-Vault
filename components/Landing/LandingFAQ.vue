@@ -86,9 +86,9 @@
       </FAQItem>
       <FAQItem title="What was The Foxington Vault built on?">
         <p>
-          The website is built on the Nuxt web framework, hosted on Vercel; the
-          images are hosted on Cloudinary and the archived images are hosted
-          under a self-hosted CDN via Cloudflare.
+          The website is built from a web framework based on Vue.js, and is
+          hosted on Vercel; the images are hosted on Cloudinary and the archived
+          images are hosted under a self-hosted CDN via Cloudflare.
         </p>
         <p>
           The actual bundling of archives are automated entirely with Python to
