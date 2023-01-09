@@ -25,8 +25,8 @@ module.exports = {
     plugin(({ addBase, addComponents, theme }) => {
       addBase({
         html: {
-					scrollBehavior: 'smooth'
-				},
+          scrollBehavior: "smooth",
+        },
         body: {
           fontFamily: theme("fontFamily.open-sans"),
         },
