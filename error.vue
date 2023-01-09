@@ -1,24 +1,27 @@
 <template>
-	<Container title="Page not found" description="">
-		<h1>
-			<span id="err-number">404</span>
-			<span id="err-msg">Page Not Found</span>
-		</h1>
-	</Container>
+  <LazyTheBaseNavbar />
+  <Container title="Page not found" description="" class="err-container">
+    <div>
+      <h1 id="err-msg">Page Not Found</h1>
+      <p>
+        Archive and website is still under construction, most parts of the pages
+        are still incomplete.
+      </p>
+    </div>
+  </Container>
+  <LazyTheBaseFooter />
 </template>
 
 <style scoped>
-h1 {
-	@apply flex flex-col items-center;
+.err-container {
+  @apply grid place-items-center h-[90vh];
 }
-
-#err-number {
-	@apply font-lucky-bold;
-	font-size: max(5rem, 7.75vw);
+h1 {
+  @apply flex flex-col items-center;
 }
 
 #err-msg {
-	@apply font-lucky-body;
-	font-size: max(1.5rem, 2vw);
+  @apply font-lucky-body;
+  font-size: max(1.5rem, 2vw);
 }
 </style>

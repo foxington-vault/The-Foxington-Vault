@@ -36,8 +36,14 @@ import { footerItems } from "./NavItems"
       </div>
       <div class="lower-third">
         <p id="copyright">
-          © {{ new Date().getFullYear() }} The Foxington Vault - an open source
-          passion project created and currently maintained by Kuroji Fusky.
+          © {{ new Date().getFullYear() }} The Foxington Vault - a passion
+          project created and currently maintained by
+          <NuxtLink
+            to="https://kurofusky.xyz/"
+            target="_blank"
+            class="text-orange-500 underline"
+            >Kuroji Fusky</NuxtLink
+          >{{ "." }}
         </p>
       </div>
     </div>

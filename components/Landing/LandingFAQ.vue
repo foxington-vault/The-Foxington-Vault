@@ -86,8 +86,8 @@
       </FAQItem>
       <FAQItem title="What was The Foxington Vault built on?">
         <p>
-          The website is built on the Nuxt web framework, hosted on Vercel;
-          the images are hosted on Cloudinary and the archived images are hosted
+          The website is built on the Nuxt web framework, hosted on Vercel; the
+          images are hosted on Cloudinary and the archived images are hosted
           under a self-hosted CDN via Cloudflare.
         </p>
         <p>
@@ -101,45 +101,46 @@
         </p>
       </FAQItem>
       <FAQItem title="Why was this project created in the first place?">
-        <article class="flex flex-col gap-2.5">
-          <p>
-            There are cases that not a lot of people know about the games they
-            saw or vaguely remember seeing it somewhere else, and I believe that
-            any kind of media preservation is vital for any work out there, if
-            it goes unnoticed for a long time, then it's considered lost media.
-          </p>
-          <p>
-            This is the sole reason why I created this project; to provide a
-            brim of Lucky information from various sources and to keep this
-            platform game to retain longer relevance and interest supplemented
-            with community-curated content. (with some exceptions)
-          </p>
-          <p>
-            Playful clearly puts the amount of dedication, love, and work they
-            put to this franchise and I'm one of the <em>lucky</em> ones (pun
-            intended) who care about the effort they put and decide to document
-            and preserve for their token of their hard work.
-          </p>
-        </article>
+        <p>
+          There are cases that not a lot of people know about the games they saw
+          or vaguely remember seeing it somewhere else, and I believe that any
+          kind of media preservation is vital for any work out there, if it goes
+          unnoticed for a long time, then it's considered lost media.
+        </p>
+        <p>
+          This is the sole reason why I created this project; to provide a brim
+          of Lucky information from various sources and to keep this platform
+          game to retain longer relevance and interest supplemented with
+          community-curated content. (with some exceptions)
+        </p>
+        <p>
+          Playful clearly puts the amount of dedication, love, and work they put
+          to this franchise and I'm one of the <em>lucky</em> ones (pun
+          intended) who care about the effort they put and decide to
+          occasionally document and preserve for their token of their hard work.
+        </p>
+      </FAQItem>
+      <FAQItem
+        title="Will you provide other languages for international audiences?"
+      >
+        Of course lmao
       </FAQItem>
       <FAQItem title="Can I contact you for any inqueries or suggestions?">
-        <article class="flex flex-col gap-2.5">
-          <p>
-            You can contact me directly on Twitter
-            <NuxtLink
-              to="https://twitter.com/kurojifusky"
-              target="_blank"
-              class="text-orange-500 underline"
-              >@kurojifusky</NuxtLink
-            >
-            or by email at
-            <NuxtLink
-              to="mailto:hello@foxingtonvault.com"
-              class="text-orange-500 underline"
-              >hello@foxingtonvault.com</NuxtLink
-            >.
-          </p>
-        </article>
+        <p>
+          You can contact me directly on Twitter
+          <NuxtLink
+            to="https://twitter.com/kurojifusky"
+            target="_blank"
+            class="text-orange-500 underline"
+            >@kurojifusky</NuxtLink
+          >
+          or by email at
+          <NuxtLink
+            to="mailto:hello@foxingtonvault.com"
+            class="text-orange-500 underline"
+            >hello@foxingtonvault.com</NuxtLink
+          >.
+        </p>
       </FAQItem>
     </div>
   </section>
