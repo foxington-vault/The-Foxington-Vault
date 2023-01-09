@@ -1,4 +1,8 @@
-<script lang="ts" setup>
+<template>
+  <img class="h-full" :src="urlParse" loading="lazy" />
+</template>
+
+<script setup lang="ts">
 const BASE_URL = "https://res.cloudinary.com/"
 const cloudName = "skepfusky-dookie"
 
@@ -17,9 +21,10 @@ const props = withDefaults(defineProps<CldImgProps>(), {
 const widthModifier = `c_scale,w_${props.width}`
 const dirModifier = `/tfv-archive${props.directory ? props.directory : "/"}`
 
-const urlParse = [...BASE, ...widthModifier, ...dirModifier, props.fileName]
+const urlParse = [
+  ...BASE,
+  ...widthModifier,
+  ...dirModifier,
+  props.fileName,
+].join("")
 </script>
-
-<template>
-  <img class="h-full" :src="urlParse.join('')" />
-</template>

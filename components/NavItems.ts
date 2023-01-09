@@ -27,12 +27,12 @@ export const footerItems: FooterItems[] = [
   {
     heading: "Franchise",
     links: [
-      { name: "Timeline", link: "#" },
-      { name: "Games", link: "#" },
-      { name: "Characters", link: "#" },
-      { name: "Storyline", link: "#" },
-      { name: "Achievements & Guides", link: "#" },
-      { name: "Behind The Crew", link: "#" },
+      { name: "Timeline", link: "/franchise/timeline" },
+      { name: "Games", link: "/games" },
+      { name: "Characters", link: "/franchise/characters" },
+      { name: "Storyline", link: "/storyline" },
+      { name: "Achievements & Guides", link: "/achievements" },
+      { name: "Behind The Crew", link: "/behind-the-crew" },
     ],
   },
   {
