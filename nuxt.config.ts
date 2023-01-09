@@ -29,7 +29,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/content", "@nuxtjs/color-mode", "@kevinmarrec/nuxt-pwa"],
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
   postcss: {
     plugins: {
