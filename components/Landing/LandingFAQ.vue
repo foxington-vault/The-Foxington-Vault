@@ -86,9 +86,9 @@
       </FAQItem>
       <FAQItem title="What was The Foxington Vault built on?">
         <p>
-          The website is built from a web framework based on Vue.js, and is
-          hosted on Vercel; the images are hosted on Cloudinary and the archived
-          images are hosted under a self-hosted CDN via Cloudflare.
+          The website is built from a web framework based on Vue.js and the site
+          itself is hosted on Vercel; the images are hosted on Cloudinary and
+          the archived images are hosted under a self-hosted CDN via Cloudflare.
         </p>
         <p>
           The actual bundling of archives are automated entirely with Python to
@@ -123,7 +123,27 @@
       <FAQItem
         title="Will you provide other languages for international audiences?"
       >
-        Of course lmao
+        <p>
+          Of course! But as of right now, this project is currently in the works
+          and the interest of this project and the franchise itself is far
+          beyond picking anyone whatsoever.
+        </p>
+        <p>
+          However, if you are feeling compelled to translate the website, feel
+          free to shot an email
+          <NuxtLink
+            to="mailto:hello@foxingtonvault.com"
+            class="text-orange-500 underline"
+            >hello@foxingtonvault.com</NuxtLink
+          >
+          or directly using Twitter
+          <NuxtLink
+            to="https://twitter.com/kurojifusky"
+            target="_blank"
+            class="text-orange-500 underline"
+            >@kurojifusky</NuxtLink
+          >{{ "!" }}
+        </p>
       </FAQItem>
       <FAQItem title="Can I contact you for any inqueries or suggestions?">
         <p>
