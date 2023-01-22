@@ -1,50 +1,60 @@
-export const navbarItems = {
-  root: [
-    { link: "#", name: "Franchise" },
-    { link: "#", name: "Community" },
-    { link: "#", name: "About" },
-  ],
-  dropdown: {
-    games: [],
-    characters: [
-      { name: "Name", type: "Protagonist", rank: "Guardian Order" },
-      { name: "Name", type: "Protagonist", rank: "Guardian Order" },
-      { name: "Name", type: "Antagonist", rank: "Guardian Order" },
+interface NestedLinks {
+  name: string
+  link: string
+  external?: boolean
+  description?: string
+}
+
+interface NavItems {
+  heading: string
+  links?: NestedLinks[]
+  customLinks?: NestedLinks[]
+}
+
+const SOCIAL_LINKS = [
+  { name: "Official website", link: "#" },
+  { name: "Playful Studios' website", link: "#" },
+  { name: "Official store page", link: "#" },
+  { name: "Reddit", link: "#" },
+  { name: "Twitter", link: "#" },
+  { name: "Instagram", link: "#" },
+]
+
+export const navbarItems: NavItems[] = [
+  {
+    heading: "Franchise",
+    customLinks: [
+      { name: "Games", link: "/games", description: "lol" },
+      { name: "Characters", link: "/characters", description: "lol" },
+      { name: "Storyline", link: "/storyline", description: "lol" },
+      { name: "Timeline", link: "/timeline", description: "lol" },
     ],
   },
-}
+  { heading: "Community", links: [...SOCIAL_LINKS] },
+  {
+    heading: "About",
+    links: [
+      { name: "About The Foxington Vault", link: "#" },
+      { name: "About The Foxington Vault", link: "#" },
+      { name: "About The Foxington Vault", link: "#" },
+    ],
+  },
+]
 
-interface FooterItems {
-  heading: string
-  links: Array<{
-    name: string
-    link: string
-    external?: boolean
-  }>
-}
-
-export const footerItems: FooterItems[] = [
+export const footerItems: NavItems[] = [
   {
     heading: "Franchise",
     links: [
-      { name: "Timeline", link: "/franchise/timeline" },
+      { name: "Timeline", link: "/timeline" },
       { name: "Games", link: "/games" },
-      { name: "Characters", link: "/franchise/characters" },
+      { name: "Characters", link: "/characters" },
       { name: "Storyline", link: "/storyline" },
-      { name: "Achievements & Guides", link: "/achievements" },
       { name: "Behind The Crew", link: "/behind-the-crew" },
     ],
   },
   {
     heading: "Official Links & Socials",
-    links: [
-      { name: "Official website", link: "#" },
-      { name: "Playful Studios' website", link: "#" },
-      { name: "Official store page", link: "#" },
-      { name: "Reddit", link: "#" },
-      { name: "Twitter", link: "#" },
-      { name: "Instagram", link: "#" },
-    ],
+    links: [...SOCIAL_LINKS],
   },
   {
     heading: "TFV Project",

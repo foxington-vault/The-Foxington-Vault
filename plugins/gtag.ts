@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     VueGtag,
     {
       config: {
-        id: process.env.GTAG_ID,
+        id: "G-EQQYFTY3DT",
       },
     },
     nuxtApp.$router

@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   typescript: {
     shim: false,
+    strict: true,
   },
   css: ["~/assets/css/main.scss"],
   app: {
@@ -41,7 +42,15 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content", "@nuxtjs/color-mode"],
-  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  runtimeConfig: {
+    public: {
+      gtag: process.env.GTAG_ID,
+    },
+  },
+  plugins: [
+    { src: "~/plugins/vercel.ts", mode: "client" },
+    { src: "~/plugins/gtag.ts", mode: "client" },
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
