@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 const BASE_URL = "https://res.cloudinary.com/"
-const cloudName = "skepfusky-dookie"
+const cloudName = "kuroji-fusky-s3"
 
 const BASE = [BASE_URL, cloudName, "/image/upload/"]
 
