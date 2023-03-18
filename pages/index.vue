@@ -1,6 +1,5 @@
 <template>
-	<Container title="The Foxington Vault" description="Home" nowrap>
-		<LandingHero />
-		<LandingFAQ />
-	</Container>
+	<div>
+		Index page
+	</div>
 </template>

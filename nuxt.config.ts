@@ -1,5 +1,6 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["@nuxt/content", "@nuxtjs/color-mode", "@nuxt/image-edge"],
   typescript: {
     shim: false,
     strict: true,
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: "icon", href: "./favicon.ico" },
+        { rel: "shortcut icon", href: "./favicon.ico" },
         {
           rel: "preload",
           href: "fonts/LuckysTale-Body.ttf",
@@ -23,12 +24,9 @@ export default defineNuxtConfig({
           type: "font/ttf",
           crossorigin: "anonymous",
         },
-        {
-          rel: "stylesheet",
-          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css",
-        },
         { rel: "manifest", href: "./manifest.json" },
       ],
+      meta: [{ name: "robots", content: "noindex,nofollow" }],
       script: [
         {
           hid: "clarity",
@@ -39,12 +37,6 @@ export default defineNuxtConfig({
             })(window, document, "clarity", "script", "${process.env.CLARITY_ID}");`,
         },
       ],
-    },
-  },
-  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
-  runtimeConfig: {
-    public: {
-      gtag: process.env.GTAG_ID,
     },
   },
   plugins: [
