@@ -1,7 +1,6 @@
-# Foxington Vault
+# The Foxington Vault
 
-The main repository for the Foxington Vault website, written in Nuxt 3
-and TypeScript
+The main repository for the Foxington Vault website, written in Next.js
 
 ## Running the website locally
 
@@ -11,12 +10,6 @@ Install dependencies with yarn
 
 ```bash
 $ yarn
-```
-
-Clone environment variables
-
-```bash
-$ cp .env.example .env
 ```
 
 Open dev server
