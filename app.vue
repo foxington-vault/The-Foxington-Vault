@@ -1,14 +1,17 @@
 <script setup lang="ts">
 const SITE_NAME = "The Foxington Vault"
+const DESCRIPTION =
+  "A non-profit digital archive and preservation project for archiving the entire Lucky's Tale franchise!"
 
 useSeoMeta({
   title: `Under Construction | ${SITE_NAME}`,
-  description: "Your mom",
+  description: DESCRIPTION,
   ogTitle: "Under Construction",
-  ogDescription: "Your mom",
+  ogDescription: DESCRIPTION,
   ogSiteName: SITE_NAME,
   ogType: "website",
   twitterTitle: `Under Construction | ${SITE_NAME}`,
+  twitterDescription: DESCRIPTION,
 })
 </script>
 
@@ -24,7 +27,7 @@ useSeoMeta({
           Tale things!
         </p>
         <p>
-          Formed by Kuroji Fusky on November 2021, The Foxington Vault aims to
+          Created by Kuroji Fusky on November 2021, The Foxington Vault aims to
           collect all information about its games, history, fan-generated
           content, and reliable resources to everything related to Lucky's Tale.
           Including physical merch items, lost media, easter eggs, and all that
