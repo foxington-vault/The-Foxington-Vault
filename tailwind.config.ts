@@ -1,14 +1,24 @@
 import type { Config } from "tailwindcss"
+import typographyPlugs from "@tailwindcss/typography"
 
-const config: Config = {
+export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./app.vue",
+    "./error.vue",
+    "./nuxt.config.ts",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "lucky-head": "LuckysTale-Heading",
+        "lucky-body": "LuckysTale-Body",
+        inter: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono"],
+      },
+    },
   },
-  plugins: [],
-}
-export default config
+  plugins: [typographyPlugs],
+} as Config

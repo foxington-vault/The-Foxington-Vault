@@ -1,31 +1,30 @@
 {
-  "name": "the-foxington-vault-next",
-  "version": "0.1.0",
+  "name": "foxington-vault",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.0.1",
-    "react": "^18",
-    "react-dom": "^18"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "clsx": "^2.0.0",
-    "dedent": "^1.5.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1",
-    "eslint-plugin-unused-imports": "^3.0.0",
-    "postcss": "^8",
-    "prettier": "^3.0.3",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.1.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.10.2",
+    "autoprefixer": "^10.4.16",
+    "nuxt": "^3.8.2",
+    "nuxt-security": "^1.0.0-rc.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.15",
+    "@fontsource/jetbrains-mono": "^5.0.17",
+    "@fontsource/open-sans": "^5.0.17"
   }
 }

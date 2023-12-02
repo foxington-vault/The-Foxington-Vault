@@ -1,0 +1,28 @@
+@import "@fontsource/inter";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/900.css";
+@import "@fontsource/jetbrains-mono";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "LuckysTale-Body";
+  src: url("/fonts/LuckysTale-Body.ttf") format("truetype"),
+    url("/fonts/LuckysTale-Body.woff") format("woff"),
+    url("/fonts/LuckysTale-Body.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LuckysTale-Heading";
+  src: url("/fonts/LuckysTale-Heading.ttf") format("truetype"),
+    url("/fonts/LuckysTale-Heading.woff") format("woff"),
+    url("/fonts/LuckysTale-Heading.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+  font-style: bold;
+}

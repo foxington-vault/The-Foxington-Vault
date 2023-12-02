@@ -1,6 +1,6 @@
 # The Foxington Vault
 
-The main repository for the Foxington Vault website, written in Next.js
+The main repository for the Foxington Vault website, written in Nuxt 3.8
 
 ## Running the website locally
 
