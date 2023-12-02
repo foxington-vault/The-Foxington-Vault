@@ -40,11 +40,11 @@ useSeoMeta({
             <strong>The Foxington Vault</strong> is an archive project and fan
             site run by an individual. This site is non-profit and does not
             claim any of the assets and copyrights used on the website and is
-            not affiliated with Playful Studios, and is
-            used for non-commerical and informational purposes. 
+            not affiliated with Playful Studios, and is used for non-commerical
+            and informational purposes.
           </p>
-          <pText
-            contents from the
+          <p>
+            Text contents from the
             <NuxtLink
               to="https://luckys-tale.fandom.com"
               target="_blank"
@@ -62,7 +62,6 @@ useSeoMeta({
               >CC-BY-SA</NuxtLink
             >
             License.>
-
           </p>
           <p id="copyright" class="pt-4">
             &copy; 2021-2024 The Foxington Vault Project
