@@ -52,7 +52,7 @@ useSeoMeta({
               class="text-orange-900 hover:text-orange-500 underline"
               >Lucky's Tale Wiki</NuxtLink
             >
-            is under
+            is licensed under
             <NuxtLink
               to="https://www.fandom.com/licensing"
               external
@@ -60,8 +60,7 @@ useSeoMeta({
               rel="noreferrer"
               class="text-orange-900 hover:text-orange-500 underline"
               >CC-BY-SA</NuxtLink
-            >
-            License.>
+            >.
           </p>
           <p id="copyright" class="pt-4">
             &copy; 2021-2024 The Foxington Vault Project
